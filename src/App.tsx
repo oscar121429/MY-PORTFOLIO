@@ -1,12 +1,13 @@
 
-import './App.css'
+import "./styles/global.css"
+import { Home } from './Pages/Home/Home'
 
 function App() {
  
 
   return (
     <>
-     Portfolio Oscar
+    <Home />
     </>
   )
 }
