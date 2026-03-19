@@ -1,0 +1,163 @@
+.experience {
+  padding: 100px 40px;
+}
+
+.experience-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.exp-title {
+  font-size: 42px;
+  margin-bottom: 10px;
+}
+
+.exp-subtitle {
+  color: #aaa;
+  margin-bottom: 50px;
+}
+
+/* TIMELINE */
+.timeline {
+  position: relative;
+}
+
+/* línea central */
+.timeline::after {
+  content: "";
+  position: absolute;
+  width: 2px;
+  background: rgba(255, 90, 47, 0.5);
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* ITEMS */
+.timeline-item {
+  width: 50%;
+  padding: 20px;
+  position: relative;
+}
+
+.timeline-item.left {
+  left: 0;
+  text-align: right;
+}
+
+.timeline-item.right {
+  left: 50%;
+  text-align: left;
+}
+
+/* punto */
+.timeline-item::after {
+  content: "";
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  background: #ff5a2f;
+  border-radius: 50%;
+  top: 30px;
+  right: -7px;
+}
+
+.timeline-item.right::after {
+  left: -7px;
+}
+
+/* CONTENT */
+.content {
+  background: rgba(20, 20, 20, 0.6);
+  backdrop-filter: blur(10px);
+
+  padding: 20px;
+  border-radius: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+
+}
+
+.date {
+  color: #ff5a2f;
+  font-size: 1.7rem;
+}
+
+.content h3 {
+  margin: 10px 0 5px;
+  font-size: 1.7rem;
+}
+
+.content h4 {
+  color: #aaa;
+  margin-bottom: 10px;
+  font-size: 1.7rem;
+}
+
+.content p {
+  color: #ccc;
+  font-size: 1.7rem;
+}
+
+/* TAGS */
+.tags {
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.tags span {
+  border: 1px solid rgba(255, 90, 47, 0.4);
+  padding: 5px 10px;
+  border-radius: 12px;
+  font-size: 12px;
+  color: #ff5a2f;
+}
+
+/* 📱 RESPONSIVE */
+@media (max-width: 768px) {
+
+  .timeline::after {
+    left: 20px;
+  }
+
+  .timeline-item {
+    width: 100%;
+    padding-left: 50px;
+    padding-right: 20px;
+    margin-bottom: 30px;
+  }
+
+  .timeline-item.left,
+  .timeline-item.right {
+    left: 0;
+    text-align: left;
+  }
+
+  .timeline-item::after {
+    left: 12px;
+    right: auto;
+  }
+
+  .content {
+    width: 100%;
+  }
+
+  .date {
+    font-size: 1rem;
+  }
+
+  .content h3 {
+    font-size: 1rem;
+  }
+
+  .content h4 {
+    font-size: 1rem;
+  }
+
+  .content p {
+    font-size: 1rem;
+  }
+}

@@ -1,0 +1,79 @@
+.skills {
+  padding: 100px 40px;
+}
+
+.skills-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.skills-subtitle {
+  color: #ff5a2f;
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+
+.skills-title {
+  font-size: 42px;
+  margin-bottom: 50px;
+}
+
+/* GRID */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+
+/* CARD */
+.skill-card {
+  background: rgba(20, 20, 20, 0.6);
+  backdrop-filter: blur(10px);
+
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 20px;
+
+  padding: 30px;
+  text-align: left;
+
+  transition: 0.3s;
+}
+
+.skill-card:hover {
+  transform: translateY(-5px);
+}
+
+/* ICON */
+.icon {
+  color: #ff5a2f;
+  font-size: 30px;
+  margin-bottom: 15px;
+}
+
+/* TAGS */
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.tags span {
+  border: 1px solid rgba(255, 90, 47, 0.4);
+  padding: 5px 10px;
+  border-radius: 15px;
+  font-size: 12px;
+  color: #ff5a2f;
+}
+
+/* 📱 RESPONSIVE */
+@media (max-width: 768px) {
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .skills-title {
+    font-size: 28px;
+  }
+}
