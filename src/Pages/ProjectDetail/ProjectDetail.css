@@ -1,0 +1,226 @@
+.project-detail {
+  padding: 100px 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+/* HEADER */
+.project-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.project-header h1 {
+  font-size: 50px;
+  margin-bottom: 10px;
+}
+
+.project-header p {
+  color: #aaa;
+  max-width: 600px;
+  margin: auto;
+  font-size: 1.7rem;
+}
+
+/* BOTONES */
+.project-buttons {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.project-buttons a {
+  text-decoration: none;
+  color: white;
+  border: 1px solid #444;
+  padding: 8px 14px;
+  border-radius: 20px;
+}
+
+.live-btn {
+  background: #ff5a2f;
+  border: none;
+}
+
+/* META */
+.project-meta {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 30px;
+}
+
+.project-meta span {
+  color: #888;
+  font-size: 12px;
+}
+
+/* CAROUSEL */
+.carousel {
+  position: relative;
+  margin: 50px 0;
+}
+
+.carousel img {
+  width: 100%;
+  border-radius: 20px;
+}
+
+.carousel button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0,0,0,0.6);
+  border: none;
+  color: white;
+  font-size: 20px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.carousel button:first-child {
+  left: 10px;
+}
+
+.carousel button:last-child {
+  right: 10px;
+}
+
+/* SECCIONES */
+.project-section {
+  margin: 60px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.project-section h2 {
+  margin-bottom: 20px;
+  font-size: 1.9rem;
+}
+
+.project-section p {
+  font-size: 1.7rem;
+  color: #aaa;
+}
+
+/* FEATURES */
+.features {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.feature h4 {
+  color: #ff5a2f;
+  font-size: 1.5rem;
+}
+
+/* TECH BOX */
+.tech-box {
+  background: rgba(20, 20, 20, 0.6);
+  padding: 40px;
+  border-radius: 20px;
+  margin-top: 60px;
+}
+
+/* TÍTULO */
+.tech-box h2 {
+  margin-bottom: 25px;
+}
+
+/* GRID */
+.tech-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px 60px;
+  margin-bottom: 30px;
+}
+
+/* BLOQUES */
+.tech-grid div {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.tech-grid h4 {
+  color: #ccc;
+  font-size: 1.7rem;
+}
+
+/* TAGS 🔥 */
+.tech-grid span {
+  display: inline-block;
+  border: 1px solid rgba(255, 90, 47, 0.5);
+  color: #ff5a2f;
+  padding: 6px 12px;
+  border-radius: 15px;
+  font-size: 1.4rem;
+  margin: 4px 6px 4px 0;
+}
+
+/* CONTENEDOR DE TAGS */
+.tech-grid div > span {
+  width: fit-content;
+}
+
+/* BOTONES */
+.tech-buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+
+/* LINK GITHUB */
+.tech-buttons a {
+  text-decoration: none;
+  color: #ccc;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 14px;
+}
+
+.tech-buttons a:hover {
+  color: white;
+}
+
+/* BOTÓN NARANJA */
+.tech-buttons .live-btn {
+  background: #ff5a2f;
+  color: white;
+  padding: 10px 18px;
+  border-radius: 20px;
+  border: none;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.tech-buttons .live-btn:hover {
+  background: #ff784f;
+}
+
+/* 📱 RESPONSIVE */
+@media (max-width: 768px) {
+  .project-header h1 {
+    font-size: 28px;
+  }
+
+  .project-meta {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .tech-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .tech-buttons {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
