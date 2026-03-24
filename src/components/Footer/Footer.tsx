@@ -1,30 +1,42 @@
 import "./Footer.css";
-import { BsGithub, BsLinkedin, BsTwitter, BsInstagram, BsEnvelope } from "react-icons/bs";
+import { BsGithub, BsLinkedin, BsInstagram, BsEnvelope } from "react-icons/bs";
 
 export const Footer = () => {
   return (
     <footer className="footer">
       <div className="footer-container">
 
-        {/* LEFT */}
+       
         <div className="footer-left">
           <h3 className="footer-logo">{`<amidat/>`}</h3>
 
-          <h4>Ammy Ogunbiyi</h4>
+          <h4>Oscar Torres</h4>
           <p>
-            Backend developer who likes building APIs and data services that feel dependable on busy days and easy to iterate on the quiet ones.
+            Full Stack developer who likes building APIs and data services that feel dependable on busy days and easy to iterate on the quiet ones.
           </p>
 
-          <div className="socials">
-            <BsGithub />
-            <BsLinkedin />
-            <BsTwitter />
-            <BsInstagram />
-            <BsEnvelope />
-          </div>
+        <div className="socials">
+
+  <a href="https://github.com/oscar121429" title="GitHub" rel="noopener noreferrer">
+    <BsGithub />
+  </a>
+
+  <a href="https://www.linkedin.com/in/oscar-torres-bausela/" title="linkedin" rel="noopener noreferrer">
+    <BsLinkedin />
+  </a>
+
+  <a href="https://instagram.com/oscar.t_b" title="Instagram" rel="noopener noreferrer">
+    <BsInstagram />
+  </a>
+
+  <a href="mailto:torresbausela@gmail.com" title="Gmail"> 
+    <BsEnvelope />
+  </a>
+
+</div>
         </div>
 
-        {/* CENTER */}
+        
         <div className="footer-links">
           <h4>Quick Links</h4>
           <ul>
@@ -37,10 +49,10 @@ export const Footer = () => {
           </ul>
         </div>
 
-        {/* RIGHT */}
+        
         <div className="footer-contact">
           <h4>Get In Touch</h4>
-          <p><BsEnvelope /> your@email.com</p>
+          <p><BsEnvelope /> torresbausela@gemail.com</p>
 
           <p>
             Open to interesting backend work — shipping features, tuning performance, or untangling tricky bugs.
@@ -50,9 +62,9 @@ export const Footer = () => {
         </div>
       </div>
 
-      {/* BOTTOM */}
+      
       <div className="footer-bottom">
-        © 2026 Your Name. All rights reserved.
+        © 2026 Oscar Torres. All rights reserved.
       </div>
     </footer>
   );

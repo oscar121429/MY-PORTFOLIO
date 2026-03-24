@@ -5,7 +5,7 @@
 
 .projects-subtitle {
   color: #ff5a2f;
-  font-size: 12px;
+  font-size: 20px;
   margin-bottom: 10px;
 }
 
@@ -24,7 +24,7 @@
 
 /* CARD */
 .project-card {
-  width: 350px;
+  width: 400px;
 
   background: rgba(20, 20, 20, 0.6);
   backdrop-filter: blur(10px);
@@ -60,7 +60,7 @@
 
 .project-content p {
   color: #aaa;
-  font-size: 14px;
+  font-size: 23px;
   margin-bottom: 15px;
 }
 
@@ -70,14 +70,16 @@
   flex-wrap: wrap;
   gap: 8px;
   margin-bottom: 15px;
+  cursor: pointer;
+
 }
 
-.tags span {
+.tags-span {
   border: 1px solid rgba(255, 90, 47, 0.4);
   color: #ff5a2f;
   padding: 5px 10px;
   border-radius: 12px;
-  font-size: 12px;
+  font-size: 28px;
 }
 
 /* FOOTER */

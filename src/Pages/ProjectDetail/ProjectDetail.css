@@ -204,6 +204,34 @@
   background: #ff784f;
 }
 
+/* btn volver */
+.back-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+
+  margin-bottom: 30px;
+
+  background: transparent;
+  border: 1px solid rgba(255, 90, 47, 0.5);
+
+  color: #ff5a2f;
+  padding: 8px 14px;
+  border-radius: 20px;
+
+  cursor: pointer;
+  transition: 0.3s;
+
+   position: sticky;
+  top: 20px;
+}
+
+/* hover pro */
+.back-btn:hover {
+  background: rgba(255, 90, 47, 0.1);
+  border-color: #ff5a2f;
+}
+
 /* 📱 RESPONSIVE */
 @media (max-width: 768px) {
   .project-header h1 {
@@ -222,5 +250,12 @@
   .tech-buttons {
     flex-direction: column;
     gap: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .back-btn {
+    font-size: 14px;
+    padding: 6px 12px;
   }
 }

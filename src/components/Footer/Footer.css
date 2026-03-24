@@ -13,7 +13,7 @@
   gap: 40px;
 }
 
-/* LEFT */
+
 .footer-left h3 {
   font-size: 18px;
   margin-bottom: 20px;
@@ -31,16 +31,20 @@
   margin-top: 15px;
 }
 
-.socials svg {
-  cursor: pointer;
+.socials a {
+  color: #aaa;
   font-size: 18px;
-  opacity: 0.9;
   transition: 0.3s;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.socials svg:hover {
-  opacity: 1;
-  transform: translateY(-2px);
+/* 🔥 hover pro */
+.socials a:hover {
+  color: #ff5a2f;
+  transform: translateY(-3px) scale(1.1);
 }
 
 /* LINKS */

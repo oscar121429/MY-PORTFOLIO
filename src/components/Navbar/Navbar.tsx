@@ -34,7 +34,7 @@ export const Navbar = () => {
     <>
       <nav className="navbar">
         <div className="nav-left">
-          <span className="logo">{`<dev/>`}</span>
+          <span className="logo">{`<oscar/>`}</span>
         </div>
 
         <div className="nav-center">

@@ -1,10 +1,12 @@
 import { useParams } from "react-router-dom";
 import { projects } from "../../data/projects";
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import "./ProjectDetail.css";
-import { BsGithub, BsBoxArrowUpRight } from "react-icons/bs";
+import { BsGithub, BsBoxArrowUpRight,  BsArrowLeft } from "react-icons/bs";
 
 export const ProjectDetail = () => {
+  const navigate = useNavigate();
   const { id } = useParams();
   const project = projects.find((p) => p.id === id);
 
@@ -26,7 +28,9 @@ export const ProjectDetail = () => {
 
   return (
     <div className="project-detail">
-
+      <button className="back-btn" onClick={() => navigate(-1)}>
+  <BsArrowLeft /> Volver
+</button>
       {/* HEADER */}
       <div className="project-header">
         <h1>{project.title}</h1>
