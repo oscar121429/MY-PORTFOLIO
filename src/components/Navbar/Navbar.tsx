@@ -8,7 +8,7 @@ export const Navbar = () => {
   const [open, setOpen] = useState(false);
   const [active, setActive] = useState("home");
 
-  // Detectar sección en scroll
+  
   useEffect(() => {
     const handleScroll = () => {
       let current = "home";
@@ -54,7 +54,7 @@ export const Navbar = () => {
         </div>
       </nav>
 
-      {/* MOBILE MENU */}
+      
       {open && (
         <div className="mobile-menu">
           <div className="mobile-content">

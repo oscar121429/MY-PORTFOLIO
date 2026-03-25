@@ -19,14 +19,14 @@
   margin-bottom: 50px;
 }
 
-/* GRID */
+
 .skills-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 30px;
 }
 
-/* CARD */
+
 .skill-card {
   background: rgba(20, 20, 20, 0.6);
   backdrop-filter: blur(10px);
@@ -44,14 +44,14 @@
   transform: translateY(-5px);
 }
 
-/* ICON */
+
 .icon {
   color: #ff5a2f;
   font-size: 30px;
   margin-bottom: 15px;
 }
 
-/* TAGS */
+
 .tags {
   display: flex;
   flex-wrap: wrap;
@@ -67,7 +67,7 @@
   color: #ff5a2f;
 }
 
-/* 📱 RESPONSIVE */
+
 @media (max-width: 768px) {
   .skills-grid {
     grid-template-columns: 1fr;

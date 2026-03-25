@@ -6,12 +6,12 @@ export const Skill = () => {
     <div className="skills">
       <div className="skills-container">
 
-        <p className="skills-subtitle">HABILIDADES Y EXPERIENCIA</p>
-        <h2 className="skills-title">Experiencia técnica</h2>
+        <p className="skills-subtitle">SKILLS & EXPERIENCE</p>
+        <h2 className="skills-title">Technical Expertise</h2>
 
         <div className="skills-grid">
 
-          {/* FRONTEND */}
+      
           <div className="skill-card">
             <BsCode className="icon" />
             <h3>Frontend</h3>
@@ -24,13 +24,13 @@ export const Skill = () => {
               <span>CSS</span>
               <span>Sass</span>
               <span>Bootstrap</span>
-              <span>Responsive</span>
+              <span>Responsive Design</span>
               <span>Flexbox</span>
-              <span>Grid</span>
+              <span>CSS Grid</span>
             </div>
           </div>
 
-          {/* BACKEND */}
+         
           <div className="skill-card">
             <BsServer className="icon" />
             <h3>Backend</h3>
@@ -39,31 +39,34 @@ export const Skill = () => {
               <span>Node.js</span>
               <span>Express</span>
               <span>REST APIs</span>
-              <span>Nodemeiler</span>
-              <span>JWT</span>
+              <span>Nodemailer</span>
+              <span>JWT Authentication</span>
             </div>
           </div>
 
-          {/* DATABASE */}
+         
           <div className="skill-card">
             <BsDatabase className="icon" />
-            <h3>Bases de datos</h3>
+            <h3>Databases</h3>
 
             <div className="tags">
               <span>MySQL</span>
+              <span>Draw.io</span>
             </div>
           </div>
 
-          {/* TOOLS */}
+        
           <div className="skill-card">
             <BsTools className="icon" />
-            <h3>Herramientas</h3>
+            <h3>Tools</h3>
 
             <div className="tags">
               <span>Git</span>
               <span>GitHub</span>
               <span>Scrum</span>
-              <span>ES6</span>
+              <span>Trello</span>
+              <span>ES6+</span>
+              <span>Postman</span>
             </div>
           </div>
 

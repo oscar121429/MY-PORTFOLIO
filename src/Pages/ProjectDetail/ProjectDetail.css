@@ -4,7 +4,7 @@
   margin: auto;
 }
 
-/* HEADER */
+
 .project-header {
   text-align: center;
   margin-bottom: 40px;
@@ -22,7 +22,7 @@
   font-size: 1.7rem;
 }
 
-/* BOTONES */
+
 .project-buttons {
   margin-top: 20px;
   display: flex;
@@ -43,7 +43,7 @@
   border: none;
 }
 
-/* META */
+
 .project-meta {
   display: flex;
   justify-content: center;
@@ -56,7 +56,7 @@
   font-size: 12px;
 }
 
-/* CAROUSEL */
+
 .carousel {
   position: relative;
   margin: 50px 0;
@@ -71,7 +71,7 @@
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  background: rgba(0,0,0,0.6);
+  background: rgba(0, 0, 0, 0.6);
   border: none;
   color: white;
   font-size: 20px;
@@ -87,7 +87,7 @@
   right: 10px;
 }
 
-/* SECCIONES */
+
 .project-section {
   margin: 60px 0;
   display: flex;
@@ -106,7 +106,7 @@
   color: #aaa;
 }
 
-/* FEATURES */
+
 .features {
   display: flex;
   flex-direction: column;
@@ -118,7 +118,7 @@
   font-size: 1.5rem;
 }
 
-/* TECH BOX */
+
 .tech-box {
   background: rgba(20, 20, 20, 0.6);
   padding: 40px;
@@ -126,12 +126,12 @@
   margin-top: 60px;
 }
 
-/* TÍTULO */
+
 .tech-box h2 {
   margin-bottom: 25px;
 }
 
-/* GRID */
+
 .tech-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -139,7 +139,7 @@
   margin-bottom: 30px;
 }
 
-/* BLOQUES */
+
 .tech-grid div {
   display: flex;
   flex-direction: column;
@@ -151,7 +151,7 @@
   font-size: 1.7rem;
 }
 
-/* TAGS 🔥 */
+
 .tech-grid span {
   display: inline-block;
   border: 1px solid rgba(255, 90, 47, 0.5);
@@ -162,12 +162,12 @@
   margin: 4px 6px 4px 0;
 }
 
-/* CONTENEDOR DE TAGS */
-.tech-grid div > span {
+
+.tech-grid div>span {
   width: fit-content;
 }
 
-/* BOTONES */
+
 .tech-buttons {
   display: flex;
   justify-content: space-between;
@@ -175,7 +175,7 @@
   margin-top: 20px;
 }
 
-/* LINK GITHUB */
+
 .tech-buttons a {
   text-decoration: none;
   color: #ccc;
@@ -189,7 +189,7 @@
   color: white;
 }
 
-/* BOTÓN NARANJA */
+
 .tech-buttons .live-btn {
   background: #ff5a2f;
   color: white;
@@ -204,7 +204,7 @@
   background: #ff784f;
 }
 
-/* btn volver */
+
 .back-btn {
   display: inline-flex;
   align-items: center;
@@ -222,20 +222,24 @@
   cursor: pointer;
   transition: 0.3s;
 
-   position: sticky;
+  position: sticky;
   top: 20px;
 }
 
-/* hover pro */
+
 .back-btn:hover {
   background: rgba(255, 90, 47, 0.1);
   border-color: #ff5a2f;
 }
 
-/* 📱 RESPONSIVE */
+
 @media (max-width: 768px) {
   .project-header h1 {
     font-size: 28px;
+  }
+
+  .project-header p {
+    font-size: 1.1rem;
   }
 
   .project-meta {
@@ -250,6 +254,39 @@
   .tech-buttons {
     flex-direction: column;
     gap: 10px;
+  }
+
+  .tech-grid div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .tech-grid span {
+    font-size: 0.9rem;
+  }
+
+  .tech-grid h4 {
+    font-size: 1.3rem;
+  }
+
+  .tech-box h2{
+    display: flex;
+    justify-content: center;
+   
+  }
+
+  .feature h4 {
+    font-size: 1.3rem;
+  }
+
+  .feature p {
+    font-size: 1.1rem;
+  }
+
+  .project-section p{
+    font-size: 1.1rem;
   }
 }
 

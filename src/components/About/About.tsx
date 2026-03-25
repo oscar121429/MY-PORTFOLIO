@@ -1,12 +1,37 @@
 import "./About.css";
 import profileImg from "../../assets/images/profile.jpg";
+import { useEffect, useRef } from "react";
 
 export const About = () => {
+
+  const aboutRef = useRef<HTMLDivElement | null>(null);
+
+useEffect(() => {
+  const observer = new IntersectionObserver(
+    ([entry]) => {
+      if (entry.isIntersecting) {
+        const elements = aboutRef.current?.querySelectorAll(
+          ".about-left, .about-right"
+        );
+
+        elements?.forEach((el) => el.classList.add("show"));
+      }
+    },
+    { threshold: 0.2 }
+  );
+
+  if (aboutRef.current) {
+    observer.observe(aboutRef.current);
+  }
+
+  return () => observer.disconnect();
+}, []);
+
   return (
-    <div className="about">
+    <div className="about" ref={aboutRef}>
       <div className="about-container">
 
-        {/* LEFT (imagen) */}
+       
         <div className="about-left">
           <div className="about-card">
             <img
@@ -14,31 +39,31 @@ export const About = () => {
               alt="profile"
             />
             <div className="about-overlay">
-              <p>ACERCA DE MÍ</p>
-              <h3>Mi viaje</h3>
+              <p>ABOUT ME</p>
+              <h3>My Journey</h3>
             </div>
           </div>
         </div>
 
-        {/* RIGHT (texto) */}
+    
         <div className="about-right">
-          <p className="about-subtitle">ACERCA DE MÍ</p>
+          <p className="about-subtitle">ABOUT ME</p>
 
           <h2 className="about-title">
-            Construyendo soluciones completas
+            Building end-to-end solutions
           </h2>
 
           <p>
-            Hola, soy <span>Oscar Torres</span>, desarrollador full stack en Málaga. 
-            Me gusta transformar ideas en aplicaciones web funcionales, cuidando tanto la experiencia de usuario en el frontend como la lógica y eficiencia del backend.
+            Hi, I'm <span>Oscar Torres</span>, a full stack developer based in Málaga. 
+            I enjoy turning ideas into functional web applications, focusing both on user experience in the frontend and efficient, scalable logic in the backend.
           </p>
 
           <p>
-            Trabajo con tecnologías modernas como React, Node.js y bases de datos SQL, creando aplicaciones escalables, mantenibles y bien estructuradas.
+            I work with modern technologies such as React, Node.js, and SQL databases, building applications that are scalable, maintainable, and well-structured.
           </p>
 
           <p>
-            Fuera del código, me gusta el deporte y especialmente el fútbol, lo que me ha enseñado la importancia del trabajo en equipo, la constancia y la disciplina.
+            Outside of coding, I enjoy sports — especially football — which has taught me the value of teamwork, consistency, and discipline, qualities I bring into my work as a developer.
           </p>
         </div>
 

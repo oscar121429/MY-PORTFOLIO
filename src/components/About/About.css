@@ -12,7 +12,7 @@
   align-items: center;
 }
 
-/* LEFT */
+
 .about-card {
   position: relative;
   border-radius: 20px;
@@ -51,7 +51,7 @@
   color: white;
 }
 
-/* RIGHT */
+
 .about-subtitle {
   color: #ff5a2f;
   margin-bottom: 10px;
@@ -75,7 +75,35 @@
   font-weight: 600;
 }
 
-/* 📱 RESPONSIVE */
+
+.about-left,
+.about-right {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 2s ease;
+}
+
+
+.about-right {
+  transform: translateX(60px);
+}
+
+
+.about-left.show,
+.about-right.show {
+  opacity: 1;
+  transform: translate(0);
+}
+
+.about-left {
+  transition-delay: 0.1s;
+}
+
+.about-right {
+  transition-delay: 0.3s;
+}
+
+
 @media (max-width: 768px) {
   .about-container {
     grid-template-columns: 1fr;

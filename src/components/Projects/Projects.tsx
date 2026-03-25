@@ -8,8 +8,8 @@ export const Projects = () => {
 
   return (
     <div className="projects">
-      <p className="projects-subtitle">PROYECTOS DESTACADOS</p>
-      <h2 className="projects-title">Muestra de Trabajos</h2>
+      <p className="projects-subtitle">FEATURED PROJECTS</p>
+      <h2 className="projects-title">Selected Work</h2>
 
       <div className="projects-grid">
         {projects.map((project) => (
@@ -32,14 +32,14 @@ export const Projects = () => {
 
               <div className="project-footer">
                 <a href={project.github} target="_blank" className="github-link">
-                  <BsGithub /> Código
+                  <BsGithub /> Code
                 </a>
 
                 <button
                   className="details-btn"
                   onClick={() => navigate(`/project/${project.id}`)}
                 >
-                  Ver detalles <BsArrowRight />
+                  View Details <BsArrowRight />
                 </button>
               </div>
             </div>

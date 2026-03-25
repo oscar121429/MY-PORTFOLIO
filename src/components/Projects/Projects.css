@@ -14,15 +14,15 @@
   margin-bottom: 50px;
 }
 
-/* 🔥 GRID INTELIGENTE */
+
 .projects-grid {
   display: flex;
-  justify-content: center; /* 👈 centra cuando hay 1 */
+  justify-content: center; 
   gap: 30px;
   flex-wrap: wrap;
 }
 
-/* CARD */
+
 .project-card {
   width: 400px;
 
@@ -41,14 +41,14 @@
   transform: translateY(-5px);
 }
 
-/* IMAGE */
+
 .project-image img {
   width: 100%;
   height: 200px;
   object-fit: cover;
 }
 
-/* CONTENT */
+
 .project-content {
   padding: 20px;
   text-align: left;
@@ -64,7 +64,7 @@
   margin-bottom: 15px;
 }
 
-/* TAGS */
+
 .tags {
   display: flex;
   flex-wrap: wrap;
@@ -82,14 +82,14 @@
   font-size: 28px;
 }
 
-/* FOOTER */
+
 .project-footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-/* 🔥 GITHUB LINK (sin azul feo) */
+
 .github-link {
   display: flex;
   align-items: center;
@@ -106,7 +106,6 @@
   color: white;
 }
 
-/* 🔥 BOTÓN NARANJA */
 .details-btn {
   background: #ff5a2f;
   border: none;
@@ -126,7 +125,7 @@
   background: #ff784f;
 }
 
-/* 📱 RESPONSIVE */
+
 @media (max-width: 768px) {
   .projects-title {
     font-size: 32px;

@@ -3,7 +3,7 @@ import { projects } from "../../data/projects";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "./ProjectDetail.css";
-import { BsGithub, BsBoxArrowUpRight,  BsArrowLeft } from "react-icons/bs";
+import { BsGithub, BsBoxArrowUpRight, BsArrowLeft } from "react-icons/bs";
 
 export const ProjectDetail = () => {
   const navigate = useNavigate();
@@ -12,7 +12,7 @@ export const ProjectDetail = () => {
 
   const [current, setCurrent] = useState(0);
 
-  if (!project) return <p>Proyecto no encontrado</p>;
+  if (!project) return <p>Project not found</p>;
 
   const next = () => {
     setCurrent((prev) =>
@@ -28,45 +28,47 @@ export const ProjectDetail = () => {
 
   return (
     <div className="project-detail">
+
       <button className="back-btn" onClick={() => navigate(-1)}>
-  <BsArrowLeft /> Volver
-</button>
-      {/* HEADER */}
+        <BsArrowLeft /> Back
+      </button>
+
+      
       <div className="project-header">
         <h1>{project.title}</h1>
         <p>{project.description}</p>
 
         <div className="project-buttons">
-          <a href={project.github} target="_blank">
-            <BsGithub /> Código
+          <a href={project.github} target="_blank" rel="noopener noreferrer">
+            <BsGithub /> Code
           </a>
 
           {project.live && (
-            <a href={project.live} target="_blank" className="live-btn">
-              <BsBoxArrowUpRight /> Demo en vivo
+            <a href={project.live} target="_blank" rel="noopener noreferrer" className="live-btn">
+              <BsBoxArrowUpRight /> Live Demo
             </a>
           )}
         </div>
 
         <div className="project-meta">
           <div>
-            <span>Año</span>
+            <span>Year</span>
             <p>{project.year}</p>
           </div>
 
           <div>
-            <span>Categoría</span>
+            <span>Category</span>
             <p>{project.category}</p>
           </div>
 
           <div>
-            <span>Rol</span>
+            <span>Role</span>
             <p>{project.role}</p>
           </div>
         </div>
       </div>
 
-      {/* CAROUSEL */}
+     
       <div className="carousel">
         <button onClick={prev}>‹</button>
 
@@ -75,18 +77,18 @@ export const ProjectDetail = () => {
         <button onClick={next}>›</button>
       </div>
 
-      {/* DESCRIPCIÓN */}
+     
       <div className="project-section">
-        <h2>Descripción general</h2>
+        <h2>Overview</h2>
 
         {project.longDescription.map((text, i) => (
           <p key={i}>{text}</p>
         ))}
       </div>
 
-      {/* FEATURES */}
+      
       <div className="project-section">
-        <h2>Características principales</h2>
+        <h2>Key Features</h2>
 
         <div className="features">
           {project.features.map((f, i) => (
@@ -98,9 +100,9 @@ export const ProjectDetail = () => {
         </div>
       </div>
 
-      {/* TECH DETAILS */}
+    
       <div className="tech-box">
-        <h2>Detalles técnicos</h2>
+        <h2>Technical Details</h2>
 
         <div className="tech-grid">
 
@@ -115,25 +117,25 @@ export const ProjectDetail = () => {
           </div>
 
           <div>
-            <h4>Base de datos</h4>
+            <h4>Database</h4>
             {project.techDetails.database.map(t => <span key={t}>{t}</span>)}
           </div>
 
           <div>
-            <h4>Auth</h4>
+            <h4>Authentication</h4>
             {project.techDetails.auth.map(t => <span key={t}>{t}</span>)}
           </div>
 
         </div>
 
         <div className="tech-buttons">
-          <a href={project.github} target="_blank">
-            <BsGithub /> Ver código fuente
+          <a href={project.github} target="_blank" rel="noopener noreferrer">
+            <BsGithub /> View Source Code
           </a>
 
           {project.live && (
-            <a href={project.live} target="_blank" className="live-btn">
-              Visitar proyecto
+            <a href={project.live} target="_blank" rel="noopener noreferrer" className="live-btn">
+              Visit Live Project
             </a>
           )}
         </div>

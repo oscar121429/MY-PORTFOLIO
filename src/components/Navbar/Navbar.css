@@ -1,4 +1,4 @@
-/* NAVBAR BASE */
+
 .navbar {
   position: fixed;
   top: 0;
@@ -12,15 +12,15 @@
   z-index: 1000;
 }
 
-/* LOGO */
+
 .logo {
   color: #ff5a2f;
   font-weight: 600;
-  font-size: 14px;
+  font-size: 24px;
   letter-spacing: 1px;
 }
 
-/* NAV CENTER (pill menu) */
+
 .nav-center {
   display: flex;
   justify-content: center;
@@ -46,7 +46,7 @@
 .nav-pill li {
   list-style: none;
   color: #aaa;
-  font-size: 13px;
+  font-size: 18px;
   cursor: pointer;
   padding: 6px 12px;
   border-radius: 999px;
@@ -71,7 +71,7 @@
   color: inherit;
 }
 
-/* RIGHT */
+
 .menu-btn {
   display: none;
   background: none;
@@ -81,7 +81,7 @@
   cursor: pointer;
 }
 
-/* 📱 MOBILE */
+
 @media (max-width: 768px) {
   .nav-center {
     display: none;
@@ -92,7 +92,7 @@
   }
 }
 
-/* MOBILE MENU (overlay estilo tu captura) */
+
 .mobile-menu {
   position: fixed;
   inset: 0;

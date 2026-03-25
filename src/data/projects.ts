@@ -3,38 +3,38 @@ export const projects = [
     id: "bruver",
 
     title: "Bruver",
-    subtitle: "Backend de gestión de citas",
+    subtitle: "Appointment management platform",
 
     description:
-      "Aplicación full stack para la gestión de citas en una peluquería canina real, con sistema de usuarios y panel de administración.",
+      "Full stack web application for managing appointments in a real dog grooming business, featuring user authentication and an internal management panel.",
 
     longDescription: [
-      "Este proyecto consiste en el desarrollo de una aplicación web full stack para la gestión de citas en una peluquería canina real.",
-      "El sistema permite a los clientes registrarse y reservar servicios de forma sencilla, mientras que los trabajadores pueden gestionar las citas desde un panel interno con vistas diarias, semanales y mensuales.",
-      "Además, se implementó un panel de administración que permite tener un control global del negocio.",
+      "This project is a full stack web application developed for managing appointments in a real dog grooming business.",
+      "Customers can register and book services easily, while staff can manage appointments through a dashboard with daily, weekly, and monthly views.",
+      "An admin panel was also implemented to provide full control over the system, improving organization and business efficiency.",
     ],
 
     features: [
       {
-        title: "Autenticación",
-        text: "Sistema de login con roles (cliente, trabajador y administrador) usando JWT.",
+        title: "Authentication",
+        text: "Role-based authentication system (client, staff, admin) implemented using JWT.",
       },
       {
-        title: "Gestión de citas",
-        text: "Creación y administración de citas con vistas diaria, semanal y mensual.",
+        title: "Appointment Management",
+        text: "Create, view, and manage appointments with daily, weekly, and monthly calendar views.",
       },
       {
-        title: "Panel de trabajador",
-        text: "Gestión de horarios, citas y servicios.",
+        title: "Staff Dashboard",
+        text: "Interface for managing schedules, appointments, and services.",
       },
       {
-        title: "Dashboard admin",
-        text: "Control global del negocio y gestión de usuarios.",
+        title: "Admin Dashboard",
+        text: "Global system overview with user and business management capabilities.",
       },
     ],
 
     techDetails: {
-      frontend: ["React", "JavaScript", "CSS", "Bootstrap", "React-bug-calendar"],
+      frontend: ["React", "JavaScript", "CSS", "Bootstrap", "React Big Calendar"],
       backend: ["Node.js", "Express"],
       database: ["MySQL"],
       auth: ["JWT"],
@@ -50,7 +50,7 @@ export const projects = [
     ],
 
     github: "https://github.com/reposocratech/MVP-Bruver",
-    live: "https://www.bruver.es/", 
+    live: "https://www.bruver.es/",
 
     images: [
       "/images/bruver1.png",
@@ -62,7 +62,7 @@ export const projects = [
     ],
 
     year: "2026",
-    category: "Full Stack App",
-    role: "Solo",
+    category: "Full Stack Application",
+    role: "Solo Developer",
   },
 ];

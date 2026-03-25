@@ -5,14 +5,14 @@ export const Experience = () => {
     <div className="experience">
       <div className="experience-container">
 
-        <h2 className="exp-title">Trayectoria profesional</h2>
+        <h2 className="exp-title">Professional Experience</h2>
         <p className="exp-subtitle">
-          Experiencia en desarrollo web y gestión de proyectos, combinando habilidades técnicas y organizativas.
+          Experience in web development and project coordination, combining technical expertise with strong organizational skills.
         </p>
 
         <div className="timeline">
 
-          {/* ITEM 1 */}
+       
           <div className="timeline-item left">
             <div className="content">
               <span className="date">2026</span>
@@ -20,8 +20,8 @@ export const Experience = () => {
               <h4>Bruver, S.L.</h4>
 
               <p>
-                Desarrollo de aplicaciones web completas utilizando React, Node.js y MySQL. 
-                Implementación de APIs REST y lógica de negocio para la gestión de reservas y servicios.
+                Developed full stack web applications using React, Node.js, and MySQL. 
+                Designed and implemented REST APIs and business logic for managing bookings and services.
               </p>
 
               <div className="tags">
@@ -33,23 +33,23 @@ export const Experience = () => {
             </div>
           </div>
 
-          {/* ITEM 2 */}
+        
           <div className="timeline-item right">
             <div className="content">
               <span className="date">2018 - 2025</span>
-              <h3>Recepcionista / Coordinador</h3>
+              <h3>Receptionist / Coordinator</h3>
               <h4>Club de Raqueta Benalmádena</h4>
 
               <p>
-                Gestión de la plataforma web de reservas, resolución de incidencias y mejora de procesos. 
-                Organización de eventos, torneos y actividades, además de atención al cliente y coordinación general del club.
+                Managed the club’s booking platform, handled incidents, and improved internal processes. 
+                Organized events and tournaments while coordinating daily operations and providing customer support.
               </p>
 
               <div className="tags">
-                <span>Gestión web</span>
-                <span>Eventos</span>
-                <span>Organización</span>
-                <span>Trabajo en equipo</span>
+                <span>Web Management</span>
+                <span>Event Planning</span>
+                <span>Organization</span>
+                <span>Teamwork</span>
               </div>
             </div>
           </div>

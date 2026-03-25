@@ -41,13 +41,13 @@
   justify-content: center;
 }
 
-/* 🔥 hover pro */
+
 .socials a:hover {
   color: #ff5a2f;
   transform: translateY(-3px) scale(1.1);
 }
 
-/* LINKS */
+
 .footer-links h4 {
   margin-bottom: 15px;
 }
@@ -71,7 +71,7 @@
   opacity: 1;
 }
 
-/* CONTACT */
+
 .footer-contact p {
   margin: 10px 0;
   font-size: 14px;
@@ -96,7 +96,7 @@
   background: #000;
 }
 
-/* BOTTOM */
+
 .footer-bottom {
   text-align: center;
   margin-top: 50px;
@@ -104,7 +104,7 @@
   opacity: 0.8;
 }
 
-/* 📱 RESPONSIVE */
+
 @media (max-width: 768px) {
   .footer-container {
     grid-template-columns: 1fr;

@@ -8,7 +8,7 @@ export const Footer = () => {
 
        
         <div className="footer-left">
-          <h3 className="footer-logo">{`<amidat/>`}</h3>
+          <h3 className="footer-logo">{`<oscar/>`}</h3>
 
           <h4>Oscar Torres</h4>
           <p>
@@ -55,7 +55,7 @@ export const Footer = () => {
           <p><BsEnvelope /> torresbausela@gemail.com</p>
 
           <p>
-            Open to interesting backend work — shipping features, tuning performance, or untangling tricky bugs.
+            Open to interesting backend and fronted work — shipping features, tuning performance, or untangling tricky bugs.
           </p>
 
           <button className="footer-btn">Contact Me</button>
