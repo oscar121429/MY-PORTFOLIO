@@ -1,6 +1,6 @@
 import { useParams } from "react-router-dom";
 import { projects } from "../../data/projects";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "./ProjectDetail.css";
 import { BsGithub, BsBoxArrowUpRight, BsArrowLeft } from "react-icons/bs";
@@ -11,6 +11,10 @@ export const ProjectDetail = () => {
   const project = projects.find((p) => p.id === id);
 
   const [current, setCurrent] = useState(0);
+
+   useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   if (!project) return <p>Project not found</p>;
 
